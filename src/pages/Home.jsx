@@ -1,33 +1,42 @@
-import Navbar from "../components/Navbar";
+// import Sidebar from "../components/Sidebar";
+// import Header from "../components/Header";
+// import Stories from "../components/Stories";
+// import Feed from "../components/Feed";
+
+// function Home() {
+//   return (
+//     <div className="bg-[#3b3f52] w-[1200px] h-[650px] rounded-xl flex overflow-hidden shadow-2xl">
+      
+//       <Sidebar />
+
+//       <div className="flex-1 p-6">
+//         <Header />
+//         <Stories />
+//         <Feed />
+//       </div>
+
+//     </div>
+//   );
+// }
+
+// export default Home;
+
+
 import Sidebar from "../components/Sidebar";
-import PostCard from "../components/PostCard";
-import BottomNav from "../components/BottomNav";
+import Header from "../components/Header";
+import Stories from "../components/Stories";
+import Feed from "../components/Feed";
 
 function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-[#3b3f52] min-h-screen flex">
 
-      <Navbar />
+      <Sidebar />
 
-      <div className="flex max-w-6xl mx-auto">
-
-        {/* Sidebar - Desktop only */}
-        <div className="hidden md:block w-64">
-          <Sidebar />
-        </div>
-
-        {/* Feed */}
-        <div className="flex-1 p-4">
-          <PostCard />
-          <PostCard />
-          <PostCard />
-        </div>
-
-      </div>
-
-      {/* Bottom nav - Mobile only */}
-      <div className="md:hidden">
-        <BottomNav />
+      <div className="flex-1 p-8">
+        <Header />
+        <Stories />
+        <Feed />
       </div>
 
     </div>
