@@ -2,7 +2,7 @@
 
 // function App() {
 //   return (
-//     <div className="bg-[#e5e7eb] min-h-screen flex items-center justify-center p-10">
+//     <div className="bg-[#e5e7eb] min-h-screen w-full">
 //       <Home />
 //     </div>
 //   );
@@ -10,13 +10,24 @@
 
 // export default App;
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <div className="bg-[#e5e7eb] min-h-screen w-full">
-      <Home />
-    </div>
+    <BrowserRouter>
+
+      <div className="bg-[#e5e7eb] min-h-screen">
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+
+      </div>
+
+    </BrowserRouter>
   );
 }
 
