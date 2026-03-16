@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 
@@ -48,6 +49,10 @@ function Profile() {
 
     </div>
   );
+=======
+function Profile() {
+  return <h1 className="text-3xl font-bold">Profile Page</h1>;
+>>>>>>> instagram-mama
 }
 
 export default Profile;
