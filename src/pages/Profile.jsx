@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 
@@ -9,12 +9,7 @@ function Profile() {
       {/* Top Section */}
       <div className="flex items-center gap-10">
 
-        {/* Profile Image */}
-        {/* <img
-          src="https://i.pravatar.cc/150"
-          alt="profile"
-          className="w-32 h-32 rounded-full object-cover"
-        /> */}
+        {/*profile pic*/}
         <img
           src="/profile.jpg"
           alt="profile"
@@ -49,10 +44,7 @@ function Profile() {
 
     </div>
   );
-=======
-function Profile() {
-  return <h1 className="text-3xl font-bold">Profile Page</h1>;
->>>>>>> instagram-mama
+
 }
 
 export default Profile;
